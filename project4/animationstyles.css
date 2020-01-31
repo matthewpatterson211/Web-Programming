@@ -1,0 +1,21 @@
+
+.box {			/*animation definition*/
+	margin:auto;
+ width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes example {	/*define animation keyframes*/
+    0%   {background-color:DarkRed; left:0px; top:0px;}
+    25%  {background-color:GreenYellow; left:200px; top:0px;}
+    50%  {background-color:BlueViolet; left:200px; top:200px;}
+    75%  {background-color:DarkGreen; left:0px; top:200px;}
+    100% {background-color:DarkRed; left:0px; top:0px;}
+}
